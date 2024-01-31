@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+    <link rel="stylesheet" href="index copy.css" />
+  </head>
+  <body>
+    <main
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <div>
+        <h1>Library Project</h1>
+        <section class="cardUpper">
+          <form action="" id="form" class="cardBody">
+            <div class="subForm">
+              <label for="title" id="tStyle">Title</label>
+              <input type="text" name="title" id="title" />
+            </div>
+            <div class="subForm">
+              <label for="author" id="aStyle">Author</label>
+              <input type="text" name="author" id="author" />
+            </div>
+            <div class="subForm read">
+              <label for="read" id="rStyle">Read</label>
+              <input type="checkbox" name="read" id="read" />
+            </div>
+            <div class="subForm">
+              <button type="submit" id="addBook">Add Book</button>
+            </div>
+          </form>
+        </section>
+        <div class="spacer"></div>
+        <div id="library" class="cardLower">
+          <!-- Add table here -->
+          <table id="table" style="min-width: 400px; margin: 1rem">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Read</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <tr>
+                <td>Name of the Wind</td>
+                <td>Patrick Rothfuss</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="read"
+                    id="readLibraryCheckbox"
+                    checked
+                    disabled
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <script src="app copy.js"></script>
+      </div>
+    </main>
+  </body>
+</html>
